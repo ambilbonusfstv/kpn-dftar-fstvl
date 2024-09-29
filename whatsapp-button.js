@@ -508,7 +508,7 @@ function getcs(){
      audio.load();
     audio4.loop = false
 setTimeout(function(){  
-location.href="https://api.whatsapp.com/send?phone=6285134080259&text=Saya Belum Mendapatkan Kode Kupon Undian"
+location.href="https://api.whatsapp.com/send?phone=628157134128&text=Saya Belum Mendapatkan Kode Kupon Undian"
     }, 4000);    
     
 }
